@@ -1,0 +1,140 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the major drawback of this experiment?",
+      "answers": {
+        "a": "It does not take the cohesive soil not account",
+        "b": "It does not take capillary into account",
+        "c": "The test is very costly",
+        "d": "It does not take into account the shear force"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "Which instrument is used for putting soil into the cone?",
+      "answers": {
+        "a": "Spatula",
+        "b": "Conical flask",
+        "c": "Spoon",
+        "d": "Pipette"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "The stopwatch should be started after ________.",
+      "answers": {
+        "a": "After first reading",
+        "b": "Inserting cone into cone stand",
+        "c": "Putting water onto the soil",
+        "d": "Putting soil on the cone"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The test is majorly used for ________.",
+      "answers": {
+        "a": "To determine the site suitability for the waste-water treatment facility",
+        "b": "To determine the compatibility of soil for the foundation",
+        "c": "To determine the site suitability of the soil for the dam",
+        "d": "To determine the site suitability of the soil for the retaining wall"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "The reading of the graduated cylinder is _________.",
+      "answers": {
+        "a": "The difference between lower meniscuses of the liquid",
+        "b": "The difference between the upper meniscuses of the liquid",
+        "c": "All of the above",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Select the correct ascending order for the following steps _________. <br> I. Place the graduated cylinder below the funnel<br> II. Take a funnel and put it on a funnel stand<br> III. Take the soil sample and put it in the funnel<br>",
+      "answers": {
+        "a": "I->II->III",
+        "b": "II->I->III",
+        "c": "III->II->I",
+        "d": "II->III->I"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "Select the correct descending order for the following steps_________. <br> I. Take a known amount of quantity of water (say 100 ml) and pour it slowly over the soil in the funnel<br> II. Start the stopwatch<br> III. Note down the amount collected in the cylinder after a known time and fine the percolation rate of the sample.",
+      "answers": {
+        "a": "I->II->III",
+        "b": "II->I->III",
+        "c": "III->II->I",
+        "d": "II->III->I"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Which of the following apparatus is  NOT used in this experiment _________.",
+      "answers": {
+        "a": "Spatula",
+        "b": "Funnel",
+        "c": "Conical flask",
+        "d": "Burette"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    }
+  ]
+}
