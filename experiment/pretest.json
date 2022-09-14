@@ -2,38 +2,157 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The Percolation test is used to determine",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The water absorption rate of soil",
+        "b": "Texture of soil",
+        "c": "Pore space of soil",
+        "d": "Bulk density of soil"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "d",
+      "difficulty": ""
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The unit of percolation rate of the soil is __________.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Unitless",
+        "b": "g/cc",
+        "c": "ml/s",
+        "d": "cm/s"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The water content of the soil can",
+      "answers": {
+        "a": "Never be greater than 100%",
+        "b": "Be less than 0%",
+        "c": "Between 0% to 100%",
+        "d": "Be greater than 100%"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "If the voids of a soil mass are full of air only, the soil is termed as",
+      "answers": {
+        "a": "Dehydrated soil",
+        "b": "Dry soil",
+        "c": "Air entrained soil",
+        "d": "Partially saturated soil"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": ""
+    },
+    {
+      "question": "In backward bladed fan, no of blade varies from",
+      "answers": {
+        "a": "32-66",
+        "b": "14-24",
+        "c": "10-20",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "Fully saturated soil is said to be",
+      "answers": {
+        "a": "One phase system",
+        "b": "Two-phase system with soil and air",
+        "c": "Two-phase system with soil and water",
+        "d": "Three-phase system"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "From the following, which soil will absorb most water ",
+      "answers": {
+        "a": "Sandy soil",
+        "b": "Clay",
+        "c": "Silt",
+        "d": "Gravel"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Which of the following statement is correct",
+      "answers": {
+        "a": "Unit weight of dry soil is greater than the unit weight of wet soil",
+        "b": "For dry soils, dry unit weight is less than total unit weight",
+        "c": "Unit weight of soil increase due to submergence in water",
+        "d": "Unit weight of soil decreases due to submergence in water"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The dimensions of the percolation rate of soil are",
+      "answers": {
+        "a": "M<sub>0</sub>L<sub>0</sub>T<sub>0</sub>",
+        "b": "M<sub>0</sub>Lub>3T-1",
+        "c": "M0L-1T3",
+        "d": "M1L1T1"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
     }
   ]
 }

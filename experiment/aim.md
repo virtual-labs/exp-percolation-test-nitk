@@ -1,1 +1,1 @@
-### Aim of the experiment
+To find the percolation rate of the soil samples.
