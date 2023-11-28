@@ -8,8 +8,26 @@ function navNext() {
     //     document.getElementById("microscope").style.display = "none";
     // }
     if (sample) {
+        
+        document.getElementById('nextButton').style.display = "none";
+
+
         document.getElementById("canvas0.5").style.visibility = "visible";
+      
         sample = 0;
+        const sampleTypeRadios = document.querySelectorAll('input[name="sampletype"]');
+        const nextButton = document.getElementById('nextButton');
+        
+        // Add a click event listener to each radio button
+        sampleTypeRadios.forEach((radio) => {
+          radio.addEventListener('click', () => {
+            if (radio.checked) {
+              nextButton.style.display = 'block';
+            } else {
+              nextButton.style.display = 'none';
+            }
+          });
+        });
     }
     else {
         simsubscreennum += 1;
@@ -45,7 +63,7 @@ var data3=[
     var data4=[[0.9066,0.68,0.64,0.64]];
 
 var ca;
-var questions = ["Which instrument is used for putting soil into the cone?",
+var questions = ["Which instrument is used for putting soil into the funnel?",
     "The stopwatch should be started after",
 ];
 
@@ -57,7 +75,7 @@ var options2 = [
 function validateAnswer(qn, ans, left, top) {
     $("#answer").empty();
     document.getElementById("a").innerHTML = "";
-    document.getElementById("questDiv").style = "z-index:200;position:absolute; font-size:14px; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:visible; left:" + left + ";top:" + top + ";";
+    document.getElementById("questDiv").style = "z-index:200; position:absolute; font-size:14px; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:visible; left:" + left + ";top:" + top + ";";
     if (qn == 2) document.getElementById('questDiv').style.width = "250px";
     document.getElementById("q").innerHTML = questions[qn];
     el = document.createElement("option");
@@ -190,6 +208,9 @@ function magic() {
     }
 
       if (simsubscreennum == 2) {
+        var type=sampletype;
+        if(type==1)
+        {
         myInt = setInterval(function() { animatearrow();}, 500);
         animateArrowATPosition(410, 270, 40, 180);
         document.getElementById('sandysoil').style.visibility = "visible";
@@ -198,24 +219,70 @@ function magic() {
             step2();
         };
     }
+    if(type==2)
+    {
+        myInt = setInterval(function() { animatearrow();}, 500);
+        animateArrowATPosition(410, 270, 40, 180);
+        document.getElementById('siltsoil').style.visibility = "visible";
+        document.getElementById('sph').onclick = function() {
+            this.onclick = null;
+            step22();
+        };
+    }
+    }
 
     if (simsubscreennum == 3) {
+        var type=sampletype;
+        if(type==1)
+        {
         myInt = setInterval(function() {animatearrow();}, 500);
         animateArrowATPosition(400, 430, 40, 360);
         document.getElementById('sandysoil').style.visibility = "visible";
         document.getElementById('setup11').style.visibility = "visible";
+        document.getElementById('stick1').style.visibility = "visible";
         document.getElementById('beaker').onclick = function() {
             this.onclick = null;
             step3();
         };
     }
+    if(type==2)
+    {
+        myInt = setInterval(function() {animatearrow();}, 500);
+        animateArrowATPosition(400, 430, 40, 360);
+        document.getElementById('sandysoil').style.visibility = "visible";
+        document.getElementById('setup112').style.visibility = "visible";
+        document.getElementById('beaker').onclick = function() {
+            this.onclick = null;
+            step3();
+        };
+    }
+    }
 
     if (simsubscreennum == 4) {
+        var type=sampletype;
+        if(type==1)
+        {
         myInt = setInterval(function() {animatearrow();}, 500);
         animateArrowATPosition(340, 450, 40, 180);
         document.getElementById('sandysoil').style.visibility = "visible";
         document.getElementById('setup12').style.visibility = "visible";
+        document.getElementById('stick2').style.visibility = "visible";
         document.getElementById('setup11').style.visibility = "hidden";
+        document.getElementById('stick1').style.visibility = "hidden";
+        document.getElementById('beakerh11').style.visibility = "hidden";
+        document.getElementById('beakerh12').style.visibility = "visible";
+        document.getElementById('water').onclick = function() {
+            this.onclick = null;
+            step4();
+        };
+    }
+    if(type==2)
+    {
+        myInt = setInterval(function() {animatearrow();}, 500);
+        animateArrowATPosition(340, 450, 40, 180);
+        document.getElementById('sandysoil').style.visibility = "visible";
+        document.getElementById('setup122').style.visibility = "visible";
+        document.getElementById('setup112').style.visibility = "hidden";
         document.getElementById('beakerh11').style.visibility = "hidden";
         document.getElementById('beakerh12').style.visibility = "visible";
         document.getElementById('water').onclick = function() {
@@ -224,16 +291,21 @@ function magic() {
         };
     }
 
+
+    }
+
     if (simsubscreennum == 5) {
         var type=sampletype;
         if(type==1)
         {
          document.getElementById("table2").style.visibility="visible";
-         document.getElementById("table21").style.visibility="visible";
-         document.getElementById("btn1").style.visibility="visible";
+        //  document.getElementById("table21").style.visibility="visible";
+        document.getElementById("unit1").style.visibility="visible";
+        //  document.getElementById("btn1").style.visibility="visible";
          document.getElementById("swh1").style.visibility="visible";
          document.getElementById("needle").style.visibility="visible";
-         document.getElementById('setup21').style.visibility = "visible";
+        //  document.getElementById('setup21').style.visibility = "visible";
+         document.getElementById('setup211').style.visibility = "visible";
          document.getElementById("drop-1").style.visibility="visible";
          document.getElementById("drop-1").style.animation="drop 1s 4";
          document.getElementById("needle").style.animation = "mover52 4s linear forwards";
@@ -242,18 +314,19 @@ function magic() {
          fillTable1(1);
          fillt(1)
          setTimeout(function() {
-           
+            document.getElementById("btn1").style.visibility="visible";
+            
             document.getElementById("drop-1").style.visibility="hidden";
 
-         },4000);
+         },5000);
 
-         calc2('btn1', 'o1', 'o1', 'btn1', 'o1', 'btn2', 'btn1', 'wng1', 'wng1', 'rgt1', 'btn2','o1', 'wng1', 'rgt1', 'rgt1','btn1',  0);
+        //  calc2('btn1', 'o1', 'o1', 'btn1', 'o1', 'btn2', 'btn1', 'wng1', 'wng1', 'rgt1', 'btn2','o1', 'wng1', 'rgt1', 'rgt1','btn1',  0);
 
-			calc2('btn2', 'o2', 'o2', 'btn2', 'o2', 'btn3', 'btn2', 'wng2', 'wng2', 'rgt2', 'btn3', 'o2', 'wng2', 'rgt2', 'rgt2', 'btn2',  1);
+		// 	calc2('btn2', 'o2', 'o2', 'btn2', 'o2', 'btn3', 'btn2', 'wng2', 'wng2', 'rgt2', 'btn3', 'o2', 'wng2', 'rgt2', 'rgt2', 'btn2',  1);
 	
-			calc2('btn3', 'o3', 'o3', 'btn3', 'o3', 'btn4', 'btn3', 'wng3', 'wng3', 'rgt3', 'btn4','o3', 'wng3', 'rgt3', 'rgt3','btn3',  2);
+		// 	calc2('btn3', 'o3', 'o3', 'btn3', 'o3', 'btn4', 'btn3', 'wng3', 'wng3', 'rgt3', 'btn4','o3', 'wng3', 'rgt3', 'rgt3','btn3',  2);
 	
-            calc2('btn4', 'o4', 'o4', 'btn4', 'o4', 'div1', 'btn4', 'wng4', 'wng4', 'rgt4', 'div1', 'o4', 'wng4', 'rgt4', 'rgt4', 'btn4',  3);
+        //     calc2('btn4', 'o4', 'o4', 'btn4', 'o4', 'div1', 'btn4', 'wng4', 'wng4', 'rgt4', 'div1', 'o4', 'wng4', 'rgt4', 'rgt4', 'btn4',  3);
             
             calc5('button1', 'output1', 'output1', 'button1', 'output1', 'nextButton', 'button1', 'wrong1', 'wrong1', 'right1', 'nextButton', 'output1', 'wrong1', 'right1', 'right1', 'button1',  0);
         }
@@ -261,8 +334,8 @@ function magic() {
         if(type==2)
         {
             document.getElementById("table3").style.visibility="visible";
-            document.getElementById("table31").style.visibility="visible";
-            document.getElementById("btn11").style.visibility="visible";
+            // document.getElementById("table31").style.visibility="visible";
+            // document.getElementById("btn11").style.visibility="visible";
             document.getElementById("swh11").style.visibility="visible";
             document.getElementById("needle1").style.visibility="visible";
             document.getElementById('setup22').style.visibility = "visible";
@@ -274,18 +347,19 @@ function magic() {
            fillTable11(1);
            fillt1(1)
             setTimeout(function() {
+                document.getElementById("butn1").style.visibility="visible";
               
                document.getElementById("drop-12").style.visibility="hidden";
     
             },4000);
     
-                calc3('btn11', 'o11', 'o11', 'btn11', 'o11', 'btn21', 'btn11', 'wng11', 'wng11', 'rgt11', 'btn21','o11', 'wng11', 'rgt11', 'rgt11','btn11',  0);
+            //     calc3('btn11', 'o11', 'o11', 'btn11', 'o11', 'btn21', 'btn11', 'wng11', 'wng11', 'rgt11', 'btn21','o11', 'wng11', 'rgt11', 'rgt11','btn11',  0);
     
-               calc3('btn21', 'o21', 'o21', 'btn21', 'o21', 'btn31', 'btn21', 'wng21', 'wng21', 'rgt21', 'btn31', 'o21', 'wng21', 'rgt21', 'rgt21', 'btn21',  1);
+            //    calc3('btn21', 'o21', 'o21', 'btn21', 'o21', 'btn31', 'btn21', 'wng21', 'wng21', 'rgt21', 'btn31', 'o21', 'wng21', 'rgt21', 'rgt21', 'btn21',  1);
        
-               calc3('btn31', 'o31', 'o31', 'btn31', 'o31', 'btn41', 'btn31', 'wng31', 'wng31', 'rgt31', 'btn41','o31', 'wng31', 'rgt31', 'rgt31','btn31',  2);
+            //    calc3('btn31', 'o31', 'o31', 'btn31', 'o31', 'btn41', 'btn31', 'wng31', 'wng31', 'rgt31', 'btn41','o31', 'wng31', 'rgt31', 'rgt31','btn31',  2);
        
-               calc3('btn41', 'o41', 'o41', 'btn41', 'o41', 'div2', 'btn41', 'wng41', 'wng41', 'rgt41', 'div2', 'o41', 'wng41', 'rgt41', 'rgt41', 'btn41',  3);
+            //    calc3('btn41', 'o41', 'o41', 'btn41', 'o41', 'div2', 'btn41', 'wng41', 'wng41', 'rgt41', 'div2', 'o41', 'wng41', 'rgt41', 'rgt41', 'btn41',  3);
                
                calc6('button11', 'output11', 'output11', 'button11', 'output11', 'nextButton', 'button11', 'wrong11', 'wrong11', 'right11', 'nextButton', 'output11', 'wrong11', 'right11', 'right11', 'button11',  0);
            
@@ -314,7 +388,8 @@ setTimeout(function() {
         document.getElementById("stand").style.visibility="hidden";
         document.getElementById("hand").style.visibility="hidden";
         document.getElementById("standf").style.visibility="visible";
-        validateAnswer(0, 0, "350px", "250px");
+        // validateAnswer(0, 0, "350px", "250px");
+        document.getElementById("nextButton").style.visibility="visible";
     }, 1000);       
     }, 1000);
 }
@@ -329,28 +404,53 @@ function step2() {
         document.getElementById("sph2").style.animation = "mover31 1s ease-in-out  forwards";
         setTimeout(function() { 
         document.getElementById("sph2").style.visibility="hidden";
+        document.getElementById("standf").style.visibility="hidden";
+        document.getElementById("stick0").style.visibility="hidden";
       document.getElementById("setup10").style.visibility="visible";
+      document.getElementById("stick3").style.visibility="visible";
+
+      validateAnswer(0, 0, "350px", "250px");
+
+    }, 1000);
+      }, 1000);
+    }, 1000);
+}
+function step22() {
+    myStopFunction();
+    document.getElementById("sph").style.animation = "mover3 1s ease-in-out  forwards";
+    setTimeout(function() {
+        document.getElementById("sph").style.visibility="hidden";
+        document.getElementById("sph22").style.visibility="visible";
+        setTimeout(function() {
+        document.getElementById("sph22").style.animation = "mover31 1s ease-in-out  forwards";
+        setTimeout(function() { 
+        document.getElementById("sph2").style.visibility="hidden";
+        document.getElementById("sph22").style.visibility="hidden";
+        document.getElementById("standf").style.visibility="hidden";
+      document.getElementById("setup102").style.visibility="visible";
         document.getElementById("nextButton").style.visibility="visible";
 
     }, 1000);
       }, 1000);
     }, 1000);
 }
-
 function step3() {
     myStopFunction();
     document.getElementById("beaker").style.visibility="hidden";
     document.getElementById("beakerh").style.visibility="visible";
-    document.getElementById("beakerh").style.animation = "mover4 1s ease-in-out  forwards";
+    document.getElementById("beakerh").style.animation = "mover4 2s ease forwards";
     setTimeout(function() {
         document.getElementById("beakerh").style.visibility="hidden";
          document.getElementById("beakerh11").style.visibility="visible";
-         validateAnswer(1, 2, "350px", "250px");
+         document.getElementById("nextButton").style.visibility="visible";
 
-    }, 1000);
+    }, 2000);
 }
 
 function step4() {
+    var type=sampletype;
+    if(type==1)
+    {
     myStopFunction();
     document.getElementById("water").style.animation = "mover5 1s ease-in-out  forwards";
     setTimeout(function() {
@@ -362,11 +462,34 @@ function step4() {
             document.getElementById("water1").style.visibility="hidden";
             document.getElementById("setup2").style.visibility="visible";
             document.getElementById("setup12").style.visibility="hidden";
+            document.getElementById('stick2').style.visibility = "hidden";
+            document.getElementById("beakerh12").style.visibility="hidden";
+            document.getElementById("nextButton").style.visibility="visible";
+            
+        }, 1000) ;
+    }, 1000) ;
+   }, 1000) ;
+}
+if(type==2)
+    {
+        myStopFunction();
+    document.getElementById("water").style.animation = "mover5 1s ease-in-out  forwards";
+    setTimeout(function() {
+        document.getElementById("water").style.animation = "mover51 1s ease-in-out  forwards";
+        setTimeout(function() {
+        document.getElementById("water").style.visibility="hidden";
+        document.getElementById("water1").style.visibility="visible";
+        setTimeout(function() {
+            document.getElementById("water1").style.visibility="hidden";
+            document.getElementById("setup202").style.visibility="visible";
+            document.getElementById("setup12").style.visibility="hidden";
+            document.getElementById("setup122").style.visibility="hidden";
             document.getElementById("beakerh12").style.visibility="hidden";
             document.getElementById("nextButton").style.visibility="visible";
         }, 1000) ;
     }, 1000) ;
    }, 1000) ;
+    }
 }
 
 var k;
@@ -421,6 +544,7 @@ function calc5(para_button1, para_output1, para_output1, para_button1, para_outp
 	var flag1 = 0;
 	document.getElementById(para_button1).onclick = function () {
 		n = document.getElementById(para_output1).value;
+        document.getElementById("unit1").style.visibility="visible";
 		if (document.getElementById(para_output1).value === "") {
 			if (document.getElementById(para_button1).innerHTML === "Result") {
 				document.getElementById(para_output1).value = 1.6495;
@@ -543,4 +667,138 @@ function calc6(para_button1, para_output1, para_output1, para_button1, para_outp
 			}
 		}
 	};
+}
+
+
+
+clkCount1=0;
+let arr1 = ["1.866","1.733","1.533","1.466"];
+
+function checkInput1() {
+  let inputs = [document.getElementById("o1"), document.getElementById("o2"), document.getElementById("o3"), document.getElementById("o4")];
+  let anyInputEmpty = false;
+  for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].value === "") {
+          anyInputEmpty = true;
+          document.getElementById("alerttxt").style.visibility="visible";
+      }
+      
+  }
+  if (anyInputEmpty) {
+      return;
+  }
+  document.getElementById("alerttxt").style.visibility="hidden";
+  clkCount1++;
+  let allInputsCorrect = true;
+  for (let i = 0; i < inputs.length; i++) {
+      console.log("red");
+      if (inputs[i].value === arr1[i]) {
+          inputs[i].style.color = "green";
+      
+  
+      } else {
+          allInputsCorrect = false;
+          inputs[i].style.color = "red";
+      }
+  // setTimeout(() => {
+  // 		inputs[i].style.color = "black";
+  // 	}, 3000);
+          // inputs[i].style.color = "black";
+      
+  }
+  if (clkCount1 == 2) {
+      document.getElementById("btn1").style.visibility="hidden";
+      document.getElementById("resbtn1").style.visibility = "visible";
+  }
+  if (allInputsCorrect) {
+     
+      document.getElementById("btn1").style.visibility = "hidden";
+      document.getElementById("resbtn1").style.visibility = "hidden";
+      document.getElementById("div1").style.visibility="visible";
+      validateAnswer(1, 2, "396px", "328px");
+  }
+}
+function getResult1() {
+  let inputs = [document.getElementById("o1"), document.getElementById("o2"), document.getElementById("o3"), document.getElementById("o4")];
+  for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = arr1[i];
+      inputs[i].style.color = "green";
+  }
+  document.getElementById("resbtn1").style.visibility = "hidden";
+  document.getElementById("div1").style.visibility="visible";
+  validateAnswer(1, 2, "396px", "328px");
+
+  // document.getElementById("nextButton").style.visibility = "visible";
+}
+    
+    
+    
+    
+    
+
+function alert1() {
+alert("Hello! I am an alert box!");
+}
+
+
+
+
+clkCount=0;
+let arr2 = ["0.9066","0.68","0.64","0.64"];
+
+function checkInput2() {
+  let inputs = [document.getElementById("o11"), document.getElementById("o21"), document.getElementById("o31"), document.getElementById("o41")];
+  let anyInputEmpty = false;
+  for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].value === "") {
+          anyInputEmpty = true;
+          document.getElementById("alerttxt").style.visibility="visible";
+      }
+      
+  }
+  if (anyInputEmpty) {
+      return;
+  }
+  document.getElementById("alerttxt").style.visibility="hidden";
+  clkCount++;
+  let allInputsCorrect = true;
+  for (let i = 0; i < inputs.length; i++) {
+      console.log("frer");
+      if (inputs[i].value === arr2[i]) {
+          inputs[i].style.color = "green";
+      
+  
+      } else {
+          allInputsCorrect = false;
+          inputs[i].style.color = "red";
+      }
+  // setTimeout(() => {
+  // 		inputs[i].style.color = "black";
+  // 	}, 3000);
+          // inputs[i].style.color = "black";
+      
+  }
+  if (clkCount == 2) {
+      document.getElementById("butn1").style.visibility="hidden";
+      document.getElementById("resbutn1").style.visibility = "visible";
+  }
+  if (allInputsCorrect) {
+     
+      document.getElementById("butn1").style.visibility = "hidden";
+      document.getElementById("resbutn1").style.visibility = "hidden";
+      document.getElementById("div2").style.visibility="visible";
+      validateAnswer(1, 2, "396px", "328px");
+  }
+}
+function getResult2() {
+  let inputs = [document.getElementById("o11"), document.getElementById("o21"), document.getElementById("o31"), document.getElementById("o41")];
+  for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = arr2[i];
+      inputs[i].style.color = "green";
+  }
+  document.getElementById("resbutn1").style.visibility = "hidden";
+  document.getElementById("div2").style.visibility="visible";
+  validateAnswer(1, 2, "396px", "328px");
+
+  // document.getElementById("nextButton").style.visibility = "visible";
 }
