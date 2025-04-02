@@ -1,11 +1,11 @@
-EMPTY
-<!-- Remove all lines above this line before making changes to the file -->
-### Subject Matter Experts
-| SNo. | Name | Email | Institute | ID |
-| :---: | :---: | :---: | :---: | :---: |
-| 1 | name | email | institute | id |
+### Developer :
+| SNo. | Name |  Institute |
+| :---: | :---: | :---: | 
+| 1 | Dr. Pruthviraj U | NITK |
 
-### Developers
-| SNo. | Name | Email | Institute | ID |
-| :---: | :---: | :---: | :---: | :---: |
-| 1 | name | email | institute | id |
+### Contributors :
+| SNo. | Name | Institute |
+| :---: | :---: |  :---: | 
+| 1 | Prajna K | NITK | 
+| 1 | Sushamita Vadde | NITK | 
+| 1 | Ashika Pai | NITK | 
