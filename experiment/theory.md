@@ -6,6 +6,9 @@
 <p style="text-indent:50px; text-align: justify;">Percolation rate test is used to determine the water absorption capacity of the soil and plays a major role to determine filter field design and site suitability for an on-site wastewater treatment facility. The major drawback with the test is that it does not take into account the capillary action. 
 </p>
 <h2>Equation</h2>
+
 <center>
-Percolation rate of soil = Amount of water percolated / Time taken by water to percolate the soil
+  
+$ Percolation rate of soil = \frac{Amount of water percolated}{Time taken by water to percolate the soil} $
+
 </center>
