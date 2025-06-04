@@ -5,10 +5,11 @@
 <p style="text-indent:50px; text-align: justify;">For experimental purposes the percolation rate is determined by measuring the amount of water passing through the test hole in any given period of time. Generally Percolation rate is highest in sandy soil and least in clayey soil. Which is also an indicator that the percolation rate also depends on particle size. The major drawback with the test is that it does not take into account the capillary action.  Unit of Percolation rate = Amount of water (mL)percolation time (mins) Q. ( till this point)</p>
 <p style="text-indent:50px; text-align: justify;">Percolation rate test is used to determine the water absorption capacity of the soil and plays a major role to determine filter field design and site suitability for an on-site wastewater treatment facility. The major drawback with the test is that it does not take into account the capillary action. 
 </p>
-<h2>Equation</h2>
+
+#### Equation 
 
 <center>
   
-$ Percolation rate of soil = \frac{Amount of water percolated}{Time taken by water to percolate the soil} $
+$ Percolation \space rate \space of \space soil = \frac{Amount \space of \space water \space percolated}{Time \space taken \space by \space water \space to \space percolate \space the \space soil} $
 
 </center>
