@@ -2,57 +2,24 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the major drawback of this experiment?",
+      "question": "Water percolates more slowly in silt and clay soils because these soils actually hold water by force. What is the attraction that helps soil hold onto water molecules?",
       "answers": {
-        "a": "It does not take the cohesive soil not account",
-        "b": "It does not take capillary into account",
-        "c": "The test is very costly",
-        "d": "It does not take into account the shear force"
+        "a": "Adhesion-Explanation",
+        "b": "Cohesion",
+        "c": "Capillary Action",
+        "d": "Recharge"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "Which instrument is used for putting soil into the cone?",
-      "answers": {
-        "a": "Spatula",
-        "b": "Conical flask",
-        "c": "Spoon",
-        "d": "Pipette"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Adhesion is the attraction between different molecules, such as water and soil particles. In silt and clay soils, the small particles have a high surface area, allowing for more adhesion between the soil particles and water molecules. This strong attraction between the soil and water molecules causes the water to be held by force, resulting in slower percolation through the soil.",
+        "b": "Cohesion is the attraction between water molecules themselves. It helps water stick together but doesn't explain how water sticks to soil particles. It is about water-to-water attraction, not soil retention.",
+        "c": "Capillary Action is the movement of water within the soil due to both adhesion and cohesion. It explains how water moves upward or horizontally in the soil, but not directly why the soil retains water.  It is related but describes movement, not retention.",
+        "d": "Recharge refers to the process of water infiltrating the ground and replenishing groundwater, not the mechanism by which soil holds water. It is unrelated to water retention in soil."
       },
       "correctAnswer": "a",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
-      "question": "The stopwatch should be started after ________.",
-      "answers": {
-        "a": "After first reading",
-        "b": "Inserting cone into cone stand",
-        "c": "Putting water onto the soil",
-        "d": "Putting soil on the cone"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": ""
-    },
-    {
-      "question": "The test is majorly used for ________.",
+      "question": "The Percolation test is majorly used for",
       "answers": {
         "a": "To determine the site suitability for the waste-water treatment facility",
         "b": "To determine the compatibility of soil for the foundation",
@@ -60,81 +27,64 @@
         "d": "To determine the site suitability of the soil for the retaining wall"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The percolation test is primarily used to: Evaluate how quickly water drains through soil.  This is crucial for designing and selecting sites for subsurface wastewater disposal systems, such as:Septic tanks, Leach fields and Soak pits. If the percolation rate is too slow, wastewater may not drain properly, leading to standing water or contamination. If it's too fast, there may be insufficient filtration, which can pollute groundwater.",
+        "b": "This depends more on bearing capacity, shear strength, and settlement characteristics, not percolation.",
+        "c": "Requires tests for impermeability, compaction, and shear strength, not percolation.",
+        "d": "Involves lateral earth pressure and stability, not water infiltration"
       },
       "correctAnswer": "a",
-      "difficulty": ""
+      "difficulty": "beginner"
     },
     {
-      "question": "The reading of the graduated cylinder is _________.",
+      "question": "What is the primary factor influencing the percolation rate of soil?",
+      "answers": {
+        "a": "Soil temperature",
+        "b": "Soil pH",
+        "c": "Soil particle size",
+        "d": "Rainfall intensity"
+      },
+      "explanations": {
+        "a": "Has minor influence on water viscosity but does not significantly affect the percolation rate.",
+        "b": "Affects chemical properties of soil, but not its physical water movement behavior.",
+        "c": "The percolation rate of soil is mainly controlled by the size of its particles because particle size determines pore space and water movement. Soils with larger particles, such as sand and gravel, have bigger pores that allow water to move quickly under gravity, resulting in a high percolation rate. In contrast, soils with smaller particles like clay have tiny pores that slow down water movement, as water is held more tightly by capillary forces, leading to a low percolation rate.",
+        "d": "Affects surface infiltration, not the rate at which water percolates within soil layers."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In a percolation test, what is the relationship between the time it takes for water to sink and the soil's percolation rate?",
+      "answers": {
+        "a": "Longer time = Higher rate",
+        "b": "Longer time = Lower rate",
+        "c": "No relationship",
+        "d": "Time does not affect percolation"
+      },
+      "explanations": {
+         "a": "Opposite of the correct relationship",
+        "b": "The percolation rate is defined as: Percolation rate=Time taken.Amount of water percolated​/Time Taken .This means that time is in the denominator of the equation. If it takes more time for water to percolate through the soil, the rate is lower. If it takes less time, the water is moving faster, so the percolation rate is higher.",
+        "c": "False; the relationship is mathematically defined.",
+        "d": "Incorrect, as time is a key variable in the calculation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The reading of the graduated cylinder is",
       "answers": {
         "a": "The difference between lower meniscuses of the liquid",
         "b": "The difference between the upper meniscuses of the liquid",
         "c": "All of the above",
+        "d": ""
+      },
+      "explanations": {
+        "a": "In a percolation experiment, water is poured into a graduated cylinder and allowed to percolate through soil. To measure how much water has percolated, you take readings from the graduated cylinder before and after. When reading liquid levels in a graduated cylinder, especially for transparent liquids like water, the standard and correct practice is to: Read at the bottom of the meniscus - the curved surface formed due to surface tension and adhesion to the glass.The initial and final readings should both be taken at the bottom of the meniscus. The difference between these two lower meniscus readings gives you the volume of water percolated.",
+        "b": "Only used for opaque or metallic liquids like mercury.",
+        "c": "Incorrect; only lower meniscus is standard.",
         "d": "None of the above"
       },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": ""
-    },
-    {
-      "question": "Select the correct ascending order for the following steps _________. <br> I. Place the graduated cylinder below the funnel<br> II. Take a funnel and put it on a funnel stand<br> III. Take the soil sample and put it in the funnel<br>",
-      "answers": {
-        "a": "I->II->III",
-        "b": "II->I->III",
-        "c": "III->II->I",
-        "d": "II->III->I"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "Select the correct descending order for the following steps_________. <br> I. Take a known amount of quantity of water (say 100 ml) and pour it slowly over the soil in the funnel<br> II. Start the stopwatch<br> III. Note down the amount collected in the cylinder after a known time and fine the percolation rate of the sample.",
-      "answers": {
-        "a": "I->II->III",
-        "b": "II->I->III",
-        "c": "III->II->I",
-        "d": "II->III->I"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": ""
-    },
-    {
-      "question": "Which of the following apparatus is  NOT used in this experiment _________.",
-      "answers": {
-        "a": "Spatula",
-        "b": "Funnel",
-        "c": "Conical flask",
-        "d": "Burette"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "d",
-      "difficulty": ""
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }

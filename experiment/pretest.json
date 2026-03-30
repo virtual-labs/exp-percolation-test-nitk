@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The Percolation test is used to determine",
+      "question": "The Percolation test is used to determine ________________ .",
       "answers": {
         "a": "The water absorption rate of soil",
         "b": "Texture of soil",
@@ -10,81 +10,47 @@
         "d": "Bulk density of soil"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The percolation test measures how quickly water moves through soil. It is commonly used in evaluating the drainage capacity or infiltration rate, especially for septic system installations. This test indicates how well the soil can absorb and allow water to pass through - in other words, the water absorption rate.",
+        "b": "Determined by particle-size analysis (sand, silt, clay %), not by a percolation test.",
+        "c": "While pore space affects percolation, it's not directly measured by the percolation test.",
+        "d": " Measured by dry mass/volume method, not related to water movement."
       },
-      "correctAnswer": "d",
-      "difficulty": ""
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     },
     {
-      "question": "The unit of percolation rate of the soil is __________.",
+      "question": "The unit of percolation rate of the soil is",
       "answers": {
         "a": "Unitless",
         "b": "g/cc",
-        "c": "ml/s",
+        "c": "km/s",
         "d": "cm/s"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Percolation rate has dimensions (length/time).",
+        "b": "This is a unit of density, not percolation.",
+        "c": "This is a unit of speed, but way too large and not suitable for soil water movement.",
+        "d": "This unit tells us how many centimeters water moves vertically through the soil in one second, making it ideal for measuring soil drainage or infiltration."
       },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
     },
     {
-      "question": "The water content of the soil can",
+      "question": "Which equation is used in the percolation rate test?",
       "answers": {
-        "a": "Never be greater than 100%",
-        "b": "Be less than 0%",
-        "c": "Between 0% to 100%",
-        "d": "Be greater than 100%"
+        "a": "Percolation rate of soil=Amount of water percolated/Time taken by water to percolate the soil",
+        "b": "Percolation rate of soil=Coefficient of permeability*hydraulic gradient",
+        "c": "Percolation rate of soil=Mass of soil collected/Volume of water collected",
+        "d": "Percolation rate of soil=Density of soil/Density of water"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The percolation rate test is a simple field test used to measure how fast water moves through soil. The basic formula used is: Percolation rate=Time taken (s)Amount /of water percolated (ml or cm). This gives the rate in units like cm/s, which indicates the speed at which water seeps into or passes through the soil.",
+        "b": "This is Darcy's Law, used in hydrogeology or lab-based permeability tests, not in simple percolation rate tests.",
+        "c": "This doesn't represent water movement through soil; it's irrelevant for percolation rate.",
+        "d": "This gives a relative density, not a rate. Again, not related to percolation testing."
       },
       "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "If the voids of a soil mass are full of air only, the soil is termed as",
-      "answers": {
-        "a": "Dehydrated soil",
-        "b": "Dry soil",
-        "c": "Air entrained soil",
-        "d": "Partially saturated soil"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": ""
-    },
-    {
-      "question": "In backward bladed fan, no of blade varies from",
-      "answers": {
-        "a": "32-66",
-        "b": "14-24",
-        "c": "10-20",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "beginner"
     },
     {
       "question": "Fully saturated soil is said to be",
@@ -95,64 +61,46 @@
         "d": "Three-phase system"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Incorrect, because there are still solid and liquid components.",
+        "b": "-Incorrect, because air is absent in fully saturated soil.",
+        "c": "Soil is typically considered a three-phase system, consisting of: Solid - mineral particles (soil grains), Liquid – water in the pores, Gas - air in the pores. However, when the soil becomes fully saturated, all the pore spaces are completely filled with water, and no air remains.",
+        "d": "Incorrect, because air is not present in fully saturated conditions."
       },
       "correctAnswer": "c",
-      "difficulty": ""
+      "difficulty": "advanced"
     },
     {
-      "question": "From the following, which soil will absorb most water ",
+      "question": "From the following, which soil will hold most water?",
       "answers": {
-        "a": "Sandy soil",
+        "a": "Sandy",
         "b": "Clay",
         "c": "Silt",
         "d": "Gravel"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Large particles and pores, Water drains quickly and doesn't stay long Holds less water than silt or clay",
+        "b": "Has the smallest particles and very fine pores. Has a large surface area relative to volume. Retains water strongly due to capillary forces and adsorption Water moves slowly but is held in large amounts. So holds the most water.",
+        "c": "Intermediate particle size. Holds water moderately well, more than sand but less than clay",
+        "d": "Very large particles and pores. Holds the least water"
       },
-      "correctAnswer": "a",
-      "difficulty": ""
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     },
     {
-      "question": "Which of the following statement is correct",
+      "question": "Which of the following statement is correct?",
       "answers": {
         "a": "Unit weight of dry soil is greater than the unit weight of wet soil",
         "b": "For dry soils, dry unit weight is less than total unit weight",
-        "c": "Unit weight of soil increase due to submergence in water",
+        "c": "Unit weight of soil increases due to submergence in water",
         "d": "Unit weight of soil decreases due to submergence in water"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Wet soil includes water mass, so its unit weight is greater than dry soil.",
+        "b": "For dry soil, there is no water, so dry unit weight = total unit weight.",
+        "c": "Due to buoyancy, the effective (or submerged) unit weight actually decreases.",
+        "d": "When soil is submerged in water, it experiences buoyant force from the water. This reduces the effective weight of the soil. As a result: Submerged Unit Weight=Total Unit Weight−Unit Weight of Water. This means the unit weight of soil decreases when submerged, even though the soil might become saturated with water."
       },
       "correctAnswer": "d",
-      "difficulty": ""
-    },
-    {
-      "question": "The dimensions of the percolation rate of soil are",
-      "answers": {
-        "a": "M<sub>0</sub>L<sub>0</sub>T<sub>0</sub>",
-        "b": "M<sub>0</sub>Lub>3T-1",
-        "c": "M0L-1T3",
-        "d": "M1L1T1"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    }
-  ]
+      "difficulty": "intermediate"
+    }  ]
 }
