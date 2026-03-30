@@ -75,7 +75,7 @@
         "a": "The difference between lower meniscuses of the liquid",
         "b": "The difference between the upper meniscuses of the liquid",
         "c": "All of the above",
-        "d": ""
+        "d": "None of the above"
       },
       "explanations": {
         "a": "In a percolation experiment, water is poured into a graduated cylinder and allowed to percolate through soil. To measure how much water has percolated, you take readings from the graduated cylinder before and after. When reading liquid levels in a graduated cylinder, especially for transparent liquids like water, the standard and correct practice is to: Read at the bottom of the meniscus - the curved surface formed due to surface tension and adhesion to the glass.The initial and final readings should both be taken at the bottom of the meniscus. The difference between these two lower meniscus readings gives you the volume of water percolated.",
