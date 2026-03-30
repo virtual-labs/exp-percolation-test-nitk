@@ -6,6 +6,6 @@
 ### Contributors :
 | SNo. | Name | Institute |
 | :---: | :---: |  :---: | 
-| 1 | Prajna K | NITK | 
-| 1 | Sushamita Vadde | NITK | 
-| 1 | Ashika Pai | NITK | 
+| 1 | Siya Sushil | NITK | 
+| 2 | Dr Vyshali | NITK | 
+| 3 | Ashika Pai | NITK | 
