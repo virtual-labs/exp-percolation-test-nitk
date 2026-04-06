@@ -19,3 +19,7 @@ A major limitation of this test is that it does not account for capillary action
 $ Percolation \space rate \space of \space soil = \frac{Amount \space of \space water \space percolated}{Time \space taken \space by \space water \space to \space percolate \space the \space soil} $
 
 </center>
+<br>
+
+#### Applications:
+The percolation test provides valuable information about the soil's ability to absorb and transmit water. This information is essential for designing on-site wastewater treatment systems, filter beds, and drainage structures, ensuring proper water movement and preventing waterlogging. Additionally, the test helps evaluate the suitability of sites for groundwater recharge, construction projects, and environmental protection by predicting how quickly water or contaminants may percolate through the soil. Overall, it is a key tool in groundwater engineering for assessing soil hydraulic properties and planning sustainable water management practices.
