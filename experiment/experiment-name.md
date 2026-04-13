@@ -1,1 +1,1 @@
-## Experiment name
+## Percolation Rate Test
